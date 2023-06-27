@@ -1,0 +1,316 @@
+<?php
+session_start();
+$sulb = $_SESSION['subject'];
+$mark = $_SESSION['hello'];
+$cc = $_SESSION['qui'];
+$len = strlen($sulb);
+$vf =  substr($sulb, -1, 2);
+$sub = substr($sulb, 0, $len-2);
+echo $sub;
+
+
+
+?>
+
+
+
+<html>
+<head>
+<style>
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100);
+
+body {
+  background-color: #3e94ec;
+  font-family: "Roboto", helvetica, arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+}
+
+div.table-title {
+   display: block;
+  margin: auto;
+  max-width: 600px;
+  padding:5px;
+  width: 100%;
+}
+
+.table-title h3 {
+   color: #fafafa;
+   font-size: 30px;
+   font-weight: 400;
+   font-style:normal;
+   font-family: "Roboto", helvetica, arial, sans-serif;
+   text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+   text-transform:uppercase;
+}
+
+
+/*** Table Styles **/
+
+.table-fill {
+  background: white;
+  border-radius:3px;
+  border-collapse: collapse;
+  height: 320px;
+  margin: auto;
+  max-width: 600px;
+  padding:5px;
+  width: 100%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  animation: float 5s infinite;
+}
+ 
+th {
+  color:#D5DDE5;;
+  background:#1b1e24;
+  border-bottom:4px solid #9ea7af;
+  border-right: 1px solid #343a45;
+  font-size:23px;
+  font-weight: 100;
+  padding:24px;
+  text-align:left;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  vertical-align:midSPMe;
+}
+
+th:first-child {
+  border-top-left-radius:3px;
+}
+ 
+th:last-child {
+  border-top-right-radius:3px;
+  border-right:none;
+}
+  
+tr {
+  border-top: 1px solid #C1C3D1;
+  border-bottom-: 1px solid #C1C3D1;
+  color:#666B85;
+  font-size:16px;
+  font-weight:normal;
+  text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
+}
+ 
+tr:hover td {
+  background:#4E5066;
+  color:#FFFFFF;
+  border-top: 1px solid #22262e;
+}
+ 
+tr:first-child {
+  border-top:none;
+}
+
+tr:last-child {
+  border-bottom:none;
+}
+ 
+tr:nth-child(odd) td {
+  background:#EBEBEB;
+}
+ 
+tr:nth-child(odd):hover td {
+  background:#4E5066;
+}
+
+tr:last-child td:first-child {
+  border-bottom-left-radius:3px;
+}
+ 
+tr:last-child td:last-child {
+  border-bottom-right-radius:3px;
+}
+ 
+td {
+  background:#FFFFFF;
+  padding:20px;
+  text-align:left;
+  vertical-align:midSPMe;
+  font-weight:300;
+  font-size:18px;
+  text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+  border-right: 1px solid #C1C3D1;
+}
+
+td:last-child {
+  border-right: 0px;
+}
+
+th.text-left {
+  text-align: left;
+}
+
+th.text-center {
+  text-align: center;
+}
+
+th.text-right {
+  text-align: right;
+}
+
+td.text-left {
+  text-align: left;
+}
+
+td.text-center {
+  text-align: center;
+}
+
+td.text-right {
+  text-align: right;
+}
+
+</style>
+</head>
+<body>
+    <html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>3-2 sem AI&ML</title>
+	<meta name="viewport" content="initial-scale=1.0; maximum-scale=1.0; width=device-width;">
+</head>
+
+<body>
+
+<div class="table-title">
+
+</div>
+<table class="table-fill">
+<thead>
+<tr>
+
+
+
+<th class="text-left">Subject</th>
+<th class = "text-left">unit</th>
+<th class = "text-left">Click</th>
+
+</tr>
+</thead>
+<tr>
+    <td>CN</td>
+	<td>CN unit 1</td>
+	<td><a href = "https://drive.google.com/file/d/1PWmgkcOkqq7A4Z3E5LfEbx7biPhKQ3tT/view?usp=drive_link">click me</a></td></tr>
+	<tr>
+	<td>CN</td>
+	<td>CN unit 2</td>
+	<td><a href = "https://drive.google.com/file/d/1PmHX0pMB0CUOJBO1Z_0ZP-zn9f4hx6kI/view?usp=drive_link">click me</a></td></tr>
+	<tr>
+	<td>CN</td>
+	<td>CN unit 3</td>
+	<td><a href = "https://drive.google.com/file/d/1PY5kH0YlhrFKhrN00UxlVkJDyP6N1uLk/view?usp=drive_link">click me</a></td></tr>
+	<tr>
+	<td>CN</td>
+	<td>CN unit 4</td>
+	<td><a href = "https://drive.google.com/file/d/1PV4KJRwd0kmKTYjlmmLN4dJuVD-372bP/view?usp=drive_link">click me</a></td></tr>
+	<tr>
+	<td>CN</td>
+	<td>CN unit 5</td>
+	<td><a href = "https://drive.google.com/file/d/1PWHk_uLSr29DE26BEQdbrtx8o8uv1cUa/view?usp=drive_link">click me</a></td></tr>
+    
+    
+</tr>
+<tr>
+    <td>OS</td>
+	<td>OS unit 1</td>
+	<td><a href = "https://drive.google.com/file/d/1PCKf6gepBUvt_ZaJZAjEIaiVi7buylpH/view?usp=drive_link">click me</a></td></tr>
+	<tr>
+	<td>OS</td>
+	<td>OS unit 2</td>
+	<td><a href = "https://drive.google.com/file/d/1P9lSTmXQKfHXS4fQVaaJ958SMZFDhX8P/view?usp=drive_link">click me</a></td></tr>
+	<tr>
+	<td>OS</td>
+	<td>OS unit 3</td>
+	<td><a href = "https://drive.google.com/file/d/1PF1XQpnB5RfH-xcDTz0EPawXDNcAcKgj/view?usp=drive_link">click me</a></td></tr>
+	<tr>
+	<td>OS</td>
+	<td>OS unit 4</td>
+	<td><a href = "https://drive.google.com/file/d/1PFzYMLNf010xvLyQw839vhZoMb2V7GcE/view?usp=drive_link">click me</a></td></tr>
+	<tr>
+	<td>OS</td>
+	<td>OS unit 5</td>
+	<td><a href = "https://drive.google.com/file/d/1PAnT2YVFy3XzkWQHwgghPfumbUTPQAuC/view?usp=drive_link">click me</a></td>
+    
+    
+</tr>
+<tr>
+    <td>SPM</td>
+	<td>SPM unit 1</td>
+	<td><a href = "https://drive.google.com/file/d/1P906vyTyx_3u4FKK6_0H4OHD5Zo2IkHJ/view?usp=drive_link">click me</a></td></tr>
+	<tr>
+	<td>SPM</td>
+	<td>SPM unit 2</td>
+	<td><a href = "https://drive.google.com/file/d/1OuNbiKeQXqz5TlQN59btG9db4oM-8i76/view?usp=drive_link">click me</a></td></tr>
+	<tr>
+	<td>SPM</td>
+	<td>SPM unit 3</td>
+	<td><a href = "https://drive.google.com/file/d/1OxYznBfomSUtaYYaRGpYe0OL3DEKXNh6/view?usp=drive_link">click me</a></td></tr>
+	<tr>
+	<td>SPM</td>
+	<td>SPM unit 4</td>
+	<td><a href = "https://drive.google.com/file/d/1P90FdUhSib1CE-X3bQA-KhafdYXuOHqi/view?usp=drive_link">click me</a></td></tr>
+	<tr>
+	<td>SPM</td>
+	<td>SPM unit 5</td>
+	<td><a href = "https://docs.google.com/document/d/1P-OTLpyDX7432SFq3mhmrM9P1QT5TxLj/edit?usp=drive_link&ouid=110841176816707305057&rtpof=true&sd=true">click me</a></td>
+    
+    
+</tr>
+<tr>
+    <td>DL</td>
+	<td>DL unit 1</td>
+	<td><a href = "https://drive.google.com/file/d/1PS0prZrQIaFYS5cksxnRXwtRZWnoE54j/view?usp=drive_link">click me</a></td></tr>
+	<tr>
+	<td>DL</td>
+	<td>DL unit 2</td>
+	<td><a href = "https://drive.google.com/file/d/1PGyloz3lSM2sF3PtMLckQ7Jw81UFqgTR/view?usp=drive_link">click me</a></td></tr>
+	<tr>
+	<td>DL</td>
+	<td>DL unit 3</td>
+	<td><a href = "https://drive.google.com/file/d/1PPRdtZ4E-CaU0cB5wBQoysBQO0NFqlUn/view?usp=drive_link">click me</a></td></tr>
+	<tr>
+	<td>DL</td>
+	<td>DL unit 4</td>
+	<td><a href = "https://docs.google.com/document/d/1PGycqrvQMw0CcFympxVFWgOxPT2BNo3t/edit?usp=drive_link&ouid=110841176816707305057&rtpof=true&sd=true">click me</a></td></tr>
+	<tr>
+	<td>DL</td>
+	<td>DL unit 5</td>
+	<td><a href = "https://drive.google.com/file/d/1PU-czqN0xCIymwI0q5WZrbBqKAYZQH7r/view?usp=drive_link">click me</a></td>
+    
+    
+</tr>
+<tr>
+    <td>DAA</td>
+	<td>DAA All units</td>
+	<td><a href = "https://drive.google.com/drive/folders/1OnmrpQTWOAsYbPOuEOHjOS4DbMcb7G1q?usp=drive_link">click me</a></td></tr>
+	<!--<tr>
+    <td>ML Lab</td>
+	<td>ML exps </td>
+	<td><a href = "https://drive.google.com/drive/folders/1BS1pxQbJ3JbGSdw6-0OFmzOubioOGQNX">click me</a></td></tr>
+	<tr>
+	<td>CD Lab</td>
+	<td>CD exps </td>
+	<td><a href = "https://drive.google.com/file/d/19BcTw6fnFgL4p3xXa-IjPWvC46MOlIAY/view?usp=drivesdk">click me</a></td></tr>
+	<tr>
+	<td>SPM Lab</td>
+	<td>SPM exps </td>
+	<td><a href = "https://drive.google.com/file/d/19BcTw6fnFgL4p3xXa-IjPWvC46MOlIAY/view?usp=drivesdk">click me</a></td></tr>
+	<tr>
+	<td>CN Lab</td>
+	<td>CN exps </td>
+	<td><a href = "https://drive.google.com/file/d/19BcTw6fnFgL4p3xXa-IjPWvC46MOlIAY/view?usp=drivesdk">click me</a></td></tr>
+	-->	
+	
+	
+</tbody>
+</table>
+  
+
+  </body>
+</body>
+</html>
+
+
+
+
