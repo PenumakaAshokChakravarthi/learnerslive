@@ -1,0 +1,424 @@
+<?php
+session_start();
+$sulb = $_SESSION['subject'];
+$mark = $_SESSION['hello'];
+$cc = $_SESSION['qui'];
+$len = strlen($sulb);
+$vf =  substr($sulb, -1, 2);
+$sub = substr($sulb, 0, $len-2);
+echo $sub;
+
+
+
+?>
+
+
+
+<html>
+<head>
+<style>
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100);
+
+body {
+  background-color: #3e94ec;
+  font-family: "Roboto", helvetica, arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+}
+
+div.table-title {
+   display: block;
+  margin: auto;
+  max-width: 600px;
+  padding:5px;
+  width: 100%;
+}
+
+.table-title h3 {
+   color: #fafafa;
+   font-size: 30px;
+   font-weight: 400;
+   font-style:normal;
+   font-family: "Roboto", helvetica, arial, sans-serif;
+   text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+   text-transform:uppercase;
+}
+
+
+/*** Table Styles **/
+
+.table-fill {
+  background: white;
+  border-radius:3px;
+  border-collapse: collapse;
+  height: 320px;
+  margin: auto;
+  max-width: 600px;
+  padding:5px;
+  width: 100%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  animation: float 5s infinite;
+}
+ 
+th {
+  color:#D5DDE5;;
+  background:#1b1e24;
+  border-bottom:4px solid #9ea7af;
+  border-right: 1px solid #343a45;
+  font-size:23px;
+  font-weight: 100;
+  padding:24px;
+  text-align:left;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  vertical-align:middle;
+}
+
+th:first-child {
+  border-top-left-radius:3px;
+}
+ 
+th:last-child {
+  border-top-right-radius:3px;
+  border-right:none;
+}
+  
+tr {
+  border-top: 1px solid #C1C3D1;
+  border-bottom-: 1px solid #C1C3D1;
+  color:#666B85;
+  font-size:16px;
+  font-weight:normal;
+  text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
+}
+ 
+tr:hover td {
+  background:#4E5066;
+  color:#FFFFFF;
+  border-top: 1px solid #22262e;
+}
+ 
+tr:first-child {
+  border-top:none;
+}
+
+tr:last-child {
+  border-bottom:none;
+}
+ 
+tr:nth-child(odd) td {
+  background:#EBEBEB;
+}
+ 
+tr:nth-child(odd):hover td {
+  background:#4E5066;
+}
+
+tr:last-child td:first-child {
+  border-bottom-left-radius:3px;
+}
+ 
+tr:last-child td:last-child {
+  border-bottom-right-radius:3px;
+}
+ 
+td {
+  background:#FFFFFF;
+  padding:20px;
+  text-align:left;
+  vertical-align:middle;
+  font-weight:300;
+  font-size:18px;
+  text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+  border-right: 1px solid #C1C3D1;
+}
+
+td:last-child {
+  border-right: 0px;
+}
+
+th.text-left {
+  text-align: left;
+}
+
+th.text-center {
+  text-align: center;
+}
+
+th.text-right {
+  text-align: right;
+}
+
+td.text-left {
+  text-align: left;
+}
+
+td.text-center {
+  text-align: center;
+}
+
+td.text-right {
+  text-align: right;
+}
+
+</style>
+</head>
+<body>
+    <html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Table Style</title>
+	<meta name="viewport" content="initial-scale=1.0; maximum-scale=1.0; width=device-width;">
+</head>
+
+<body>
+
+<div class="table-title">
+
+</div>
+<table class="table-fill">
+<thead>
+<tr>
+
+
+
+<th class="text-left">DAY</th>
+<th class = "text-left">DATE</th>
+<th class = "text-left">Files</th>
+
+</tr>
+</thead>
+<tr>
+    <td>Tuesday</td>
+	<td>1-04-2025</td>
+	<td><a href = "https://drive.google.com/drive/folders/1rdWQcbGhS6uiJba_JxcHFjtnAPUagM8H?usp=drive_link">click Here</a></td></tr>
+	<tr>
+	<td>Wednesday</td>
+	<td>02-04-2025</td>
+	<td><a href = "https://drive.google.com/drive/folders/1sXxB0GctkPB-u9LyMCaVR046icIw3ViE?usp=drive_link">click me</a></td></tr>
+	<tr>
+	<td>Thursday</td>
+	<td>03-04-2025</td>
+	<td><a href = "https://drive.google.com/drive/folders/1q-RImrJBGds7T-4wLpZSz1QI-ZW2f_yJ?usp=drive_link">click me</a></td></tr>
+	<tr>
+	<td>Friday</td>
+	<td>04-04-2025</td>
+	<td><a href = "https://drive.google.com/drive/folders/1ZA0qBMjt4zSecyWw7qsdl-7b7ssoZZyx?usp=drive_link">click me</a></td></tr>
+	<tr>
+	<td>Saturday</td>
+	<td>05-04-2025</td>
+	<td><a href = "https://drive.google.com/drive/folders/1iX8i611zGShU7NyZFAWRwSR4JwvXq-Az?usp=drive_link">click me</a></td></tr>
+    <tr>
+	<td>Sunday</td>
+	<td>06-05-2025</td>
+	<td><a href = "https://drive.google.com/drive/folders/16LyDII-ZfXgLXUT8BgGLkcLpzwN_Ek53?usp=drive_link">click me</a></td></tr>
+	<tr>
+    <td>Monday</td>
+	<td>07-04-2025</td>
+	<td><a href = "https://drive.google.com/drive/folders/1LG8lTTiQW2DHj-INwadNhgLGyftHx6Zu?usp=drive_link">click me</a></td></tr>
+    
+    
+</tr>
+<tr>
+    <td>Tuesday</td>
+	<td>08-04-2025</td>
+	<td><a href = "https://drive.google.com/drive/folders/1Rr6ESOHAzHbgFPJCRNJeUBMnsXNelLN6?usp=drive_link">click Here</a></td></tr>
+	<tr>
+	<td>Wednesday</td>
+	<td>09-04-2025</td>
+	<td><a href = "https://drive.google.com/drive/folders/1e3S-kWAcbddkjqCJvZhu6KakZJnbcAtB?usp=drive_link">click me</a></td></tr>
+	<tr>
+	<td>Thursday</td>
+	<td>10-04-2025</td>
+	<td><a href = "https://drive.google.com/drive/folders/1U8aMGnvCQhCG0Q-3CxJ0R6VkbFwi_HyS?usp=drive_link">click me</a></td></tr>
+	<tr>
+	<td>Friday</td>
+	<td>11-04-25</td>
+	<td><a href = "https://drive.google.com/drive/folders/1R-FeBZqgiXZIRLWJ_tXkIo5DfUmdqLxS?usp=drive_link">click me</a></td></tr>
+	<tr>
+	<td>Saturday</td>
+	<td>12-04-2025</td>
+	<td><a href = "https://drive.google.com/drive/folders/1G0PskhnhTa85dK3Fagy3LqSNnud05-fR?usp=drive_link">click me</a></td></tr>
+    <tr>
+	<td>Sunday</td>
+	<td>13-04-2025</td>
+	<td><a href = "https://drive.google.com/drive/folders/1y2BIziL-EMtJEHwbOKxF8hLKvx4D050_?usp=drive_link">click me</a></td></tr>
+	<tr>
+    <td>Monday</td>
+	<td>14-04-2025</td>
+	<td><a href = "https://drive.google.com/drive/folders/1aVkryVnvG4LEaNPpLHYDMU_kBKV6tc7S?usp=drive_link">click me</a></td></tr>
+    
+    
+</tr>
+<tr>
+    <td>Tuesday</td>
+	<td>15-04-2025</td>
+	<td><a href = "https://drive.google.com/drive/folders/1LVoMYL6HMK7pClAngloYUhFBRyE5jeCS?usp=drive_link">click Here</a></td></tr>
+	<tr>
+	<td>Wednesday</td>
+	<td>16-04-2025</td>
+	<td><a href = "https://drive.google.com/drive/folders/1Gesy-p3r89JTMkb-p4gI_c9NvscknM1B?usp=drive_link">click me</a></td></tr>
+	<tr>
+	<td>Thursday</td>
+	<td>17-04-2025</td>
+	<td><a href = "https://drive.google.com/drive/folders/1zMpzR8mjwFw5F6iufMUx-vX3miODhyfk?usp=drive_link">click me</a></td></tr>
+	<tr>
+	<td>Friday</td>
+	<td>18-04-2025</td>
+	<td><a href = "https://drive.google.com/drive/folders/1Ia-oFQ8i-mrWH2hlh4cDbaFhqGmYthMf?usp=drive_link">click me</a></td></tr>
+	<tr>
+	<td>Saturday</td>
+	<td>19-04-2025</td>
+	<td><a href = "https://drive.google.com/drive/folders/1vC2MzU1nT13zYvdBJrdo5YCpwsofI5y3?usp=drive_link">click me</a></td></tr>
+    <tr>
+	<td>Sunday</td>
+	<td>20-05-2025</td>
+	<td><a href = "https://drive.google.com/drive/folders/1e9MvgyfcLuG37PeKEI0UkBkSHvqtGomC?usp=drive_link">click me</a></td></tr>
+	<tr>
+    <td>Monday</td>
+	<td>21-04-2025</td>
+	<td><a href = "https://drive.google.com/drive/folders/1nd5sQVRBWbkqfd8gpC3NCLJOxXZ0ZQeW?usp=drive_link">click me</a></td></tr>
+	<tr>
+		<td>Tuesday</td>
+		<td>22-04-2025</td>
+		<td><a href = "https://drive.google.com/drive/folders/1MHXM5sE6d08SZYKZ2F4bmiEZd9TEm0rw?usp=drive_link">click Here</a></td></tr>
+		<tr>
+		<td>Wednesday</td>
+		<td>23-04-2025</td>
+		<td><a href = "https://drive.google.com/drive/folders/1gljeAS9_qkCUJH2-GbbxgdzFy-C58w6S?usp=drive_link">click me</a></td></tr>
+		<tr>
+		<td>Thursday</td>
+		<td>24-04-2025</td>
+		<td><a href = "https://drive.google.com/drive/folders/1zZpmQWA65BAaJZHIMJkeqNO9ro__zHKI?usp=drive_link">click me</a></td></tr>
+		<tr>
+		<td>Friday</td>
+		<td>25-04-25</td>
+		<td><a href = "https://drive.google.com/drive/folders/1esCSA9nTyoLokuKEvVVfX-M5VoBx6xXp?usp=drive_link">click me</a></td></tr>
+		<tr>
+		<td>Saturday</td>
+		<td>26-04-2025</td>
+		<td><a href = "https://drive.google.com/drive/folders/1B_eCq1r14zrkvayQawSHJpSr777agZ6d?usp=drive_link">click me</a></td></tr>
+		<tr>
+		<td>Sunday</td>
+		<td>27-05-2025</td>
+		<td><a href = "https://drive.google.com/drive/folders/1yasFpMXsT37-6NRfVIUXMtnVUoHpnsGt?usp=drive_link">click me</a></td></tr>
+		<tr>
+		<td>Monday</td>
+		<td>28-04-2025</td>
+		<td><a href = "https://drive.google.com/drive/folders/1XG-0cWtWRmG-FQiWun6dMdlZx8242ocO?usp=drive_link">click me</a></td></tr>
+		
+		
+		<tr>
+			<td>Tuesday</td>
+			<td>29-04-2025</td>
+			<td><a href = "https://drive.google.com/drive/folders/1ajTvde9cMI5F2tnbmm2EGonm76HpY93k?usp=drive_link">click Here</a></td></tr>
+			<tr>
+			<td>Wednesday</td>
+			<td>30-04-2025</td>
+			<td><a href = "https://drive.google.com/drive/folders/1kRSc-hYGdEeLqe0jFevoG6kVJlK9piTQ?usp=drive_link">click me</a></td></tr>
+			<!--<tr>
+			<td>Thursday</td>
+			<td>03-04-2025</td>
+			<td><a href = "sample.html">click me</a></td></tr>
+			<tr>
+			<td>Friday</td>
+			<td>04-04-25</td>
+			<td><a href = "sample.html">click me</a></td></tr>
+			<tr>
+			<td>Saturday</td>
+			<td>05-04-2025</td>
+			<td><a href = "sample.html">click me</a></td></tr>
+			<tr>
+			<td>Sunday</td>
+			<td>06-05-2025</td>
+			<td><a href = "sample.html">click me</a></td></tr>
+			<tr>
+			<td>Monday</td>
+			<td>07-04-2025</td>
+			<td><a href = "sample.html">click me</a></td></tr>
+			
+			
+		</tr>-->
+</tr>
+<!--Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, and Sunday. -->
+<!--tr
+    <td>OOAD</td>
+	<td>OOAD unit 1</td>
+	<td><a href = "https://docs.google.com/document/d/1AF8F8ReMZCL4IDJkr5TyjdIQGB935DfL/edit?usp=drivesdk&ouid=110841176816707305057&rtpof=true&sd=true">click me</a></td></tr>
+	<tr>
+	<td>OOAD</td>
+	<td>OOAD unit 2</td>
+	<td><a href = "https://docs.google.com/document/d/1AOuBdHkMi_RWEXteYkJ2hwoRMfsGNVYu/edit?usp=drivesdk&ouid=110841176816707305057&rtpof=true&sd=true">click me</a></td>
+	<tr>
+	<td>OOAD</td>
+	<td>OOAD unit 3</td>
+	<td><a href = "https://docs.google.com/document/d/1AGjYjeP5rVQXEoE4XlzQ9B17db0P-pjT/edit?usp=drivesdk&ouid=110841176816707305057&rtpof=true&sd=true">click me</a></td>
+	<tr>
+	<td>OOAD</td>
+	<td>OOAD unit 4</td>
+	<td><a href = "https://docs.google.com/document/d/1AGMME3CIqN5nSZ65r-r6GPxOrZOO-QUw/edit?usp=drivesdk&ouid=110841176816707305057&rtpof=true&sd=true">click me</a></td>
+	<tr>
+	<td>OOAD</td>
+	<td>OOAD unit 5</td>
+	<td><a href = "https://docs.google.com/document/d/1AQv2og8oXAUIypKOZF2K39XGM1PqpHfX/edit?usp=drivesdk&ouid=110841176816707305057&rtpof=true&sd=true">click me</a></td>
+    
+    
+</tr>
+<tr>
+    <td>MSD</td>
+	<td>MSD unit 1</td>
+	<td><a href = "https://drive.google.com/file/d/19a6OMAbom7RM8kJR-_Aj0T0I0iNyTRUo/view?usp=drivesdk">click me</a></td></tr>
+	<tr>
+	<td>MSD</td>
+	<td>MSD unit 2</td>
+	<td><a href = "https://drive.google.com/file/d/19T0Wy_dsP9xGme2YbwNFZyCkEIWrk3qS/view?usp=drivesdk">click me</a></td>
+	<tr>
+	<td>MSD</td>
+	<td>MSD unit 3</td>
+	<td><a href = "https://drive.google.com/file/d/19fE-FNYwONM7qOzA0sdahvAIjmn60Lgl/view?usp=drivesdk">click me</a></td>
+	<tr>
+	<td>MSD</td>
+	<td>MSD unit 4</td>
+	<td><a href = "https://drive.google.com/file/d/19Swcj8ggyOdMfdbkUl2BdZ9hnhahP23s/view?usp=drivesdk">click me</a></td>
+	<tr>
+	<td>MSD</td>
+	<td>MSD unit 5</td>
+	<td><a href = "https://drive.google.com/file/d/19p8frSh_qc7QXKkvf3SVqXFEAC1Sy5gk/view?usp=drivesdk">click me</a></td>
+    
+    
+</tr>
+<tr>
+    <td>ML</td>
+	<td>ML All units</td>
+	<td><a href = "https://drive.google.com/drive/folders/1AVK3LuwCctkHtCbvZ5o8JMKsoLD9qW95">click me</a></td></tr>
+	<tr>
+    <td>ML Lab</td>
+	<td>ML exps </td>
+	<td><a href = "https://drive.google.com/drive/folders/1BS1pxQbJ3JbGSdw6-0OFmzOubioOGQNX">click me</a></td></tr>
+	<tr>
+	<td>CD Lab</td>
+	<td>CD exps </td>
+	<td><a href = "https://drive.google.com/file/d/19BcTw6fnFgL4p3xXa-IjPWvC46MOlIAY/view?usp=drivesdk">click me</a></td></tr>
+	<tr>
+	<td>MSD Lab</td>
+	<td>MSD exps </td>
+	<td><a href = "https://drive.google.com/file/d/19BcTw6fnFgL4p3xXa-IjPWvC46MOlIAY/view?usp=drivesdk">click me</a></td></tr>
+	<tr>
+	<td>CNS Lab</td>
+	<td>CNS exps </td>
+	<td><a href = "https://drive.google.com/file/d/19BcTw6fnFgL4p3xXa-IjPWvC46MOlIAY/view?usp=drivesdk">click me</a></td></tr>
+	
+	-->
+	
+	
+</tbody>
+</table>
+  
+
+  </body>
+</body>
+</html>
+
+
+
+
